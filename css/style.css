@@ -1,0 +1,266 @@
+body {
+    font : 15px/1.5  arial,helvetica,sans-serif;
+    margin : 0;
+    padding : 0;
+    background-color: white;
+}
+
+
+/* Global */
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+ ul {
+    margin:0;
+    padding:0;
+}
+
+.button_1 {
+    height : 37px;
+    background-color: tomato;
+    border : none;
+    color :antiquewhite;
+    padding-left : 20px;
+    padding-right : 20px;
+}
+
+.dark {
+    background-color:cadetblue;
+    padding : 15px;
+    color :white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*end global*/
+
+/* header */
+
+header {
+    background-color:white;
+    padding-top:30px;
+    color:tomato;
+    min-height: 70px;
+    border-bottom: red 2px solid;
+}
+
+header a {
+    color : tomato;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size:16px;
+}
+
+
+header li {
+    float : left;
+    padding : 0 20px 0 20px;
+    display:inline;
+}
+
+header #branding {
+    float : left;
+}
+
+header #branding h1 {
+    margin : 0;
+}
+
+header nav {
+    float : right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color :cadetblue;
+    font-weight : bold;
+}
+
+.highlight {
+    color :cadetblue;
+    font-weight : bold;
+    font-size: 30px;
+}
+
+.hightlight_2{
+    color :tomato;
+    font-weight : bold;
+    font-size: 30px;
+}
+
+h1#page-title {
+    color:cadetblue;
+    font-size: 22px;
+}
+
+h3,.question, .answer{ 
+    text-align: center;
+}
+
+
+.word p {
+    font-size: 40px;
+}
+
+.hightlight_2about{
+    color :tomato;
+    font-weight : bold;
+    
+   
+}
+
+.highlight_about{
+    color :cadetblue;
+    font-weight : bold;
+}
+
+.about_p1 {
+    color : cadetblue;
+}
+
+header :hover{
+    font-weight:bolder;
+}
+
+/*Showcase*/
+
+#showcase {
+    min-height : 400px;
+    background : url(../img/background.png) no-repeat 0 -250px;
+    text-align: center;
+    color:tomato;
+}
+
+
+
+#showcase h1 {
+    font-size:57px;
+    margin-top:55px;
+    margin-bottom:10px;
+    color: white;
+}
+
+#showcase p {
+    font-size:20px;
+}
+
+#newsletter {
+    background-color:cadetblue;
+    padding:15px;
+    color:white;
+}
+
+#newsletter h1 {
+    float :left;
+}
+
+#newsletter form {
+    float :right;
+    margin-top:20px;
+}
+
+#newsletter input[type="email"] {
+    width :250px;
+    height: 25px;
+    padding :4px;
+}
+
+/*Boxes*/
+
+#boxes {
+    margin-top : 40px;
+}
+
+#boxes .box {
+    float : left;
+    text-align: center;
+    width :28%;
+    margin-left: 13px;
+    padding :10px;
+    background-color:white;
+    color:cadetblue
+}
+
+#boxes .box img {
+    width :100%;
+    
+}
+
+/*sidebar*/
+#sidebar {
+    float : right;
+    width : 30%;
+    margin-top : 30px;
+}
+
+/*artikel*/
+article#main-col {
+    float :left;
+    width :65%;
+}
+
+ul#services li {
+    list-style : none;
+    background-color: cadetblue;
+    color:white;
+    padding : 20px;
+    border:gray solid 1px;
+    margin-bottom: 5px;
+}
+
+
+footer {
+    padding : 20px;
+    margin : 20px;
+    color : white;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media(max-width : 768px) {
+    /* tablet screen */
+   header #branding,
+   header nav,
+   header li,
+   #newsletter h1,
+   #newsletter form,
+   #boxes .box,
+   article#main-col,
+   aside#sidebar{
+     float : none;
+     text-align: center;
+     width : 100%;
+   }
+
+   #boxes .box {
+    margin-bottom: 30px;
+   }
+   header {
+    padding-bottom : 20px;
+
+   }
+
+   header nav ul li a {
+     font-size: 12px;
+   }
+
+   #showcase h1 {
+    margin-top: 40px;
+    
+   }
+
+   #newsletter button, .quote button {
+    display : blok;
+    width : 100%;
+   }
+
+   #newsletter form input[type="email"], .quote input, .quote textarea{
+    width :  100%;
+    margin-bottom : 5px;
+   }
+}
